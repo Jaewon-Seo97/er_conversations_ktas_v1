@@ -1,0 +1,45 @@
+{
+    
+    "fold_split": 10,
+    "Stop_word": ["(", ")", "((", "))", "(())", "()", " (())", "(()) ","(( ))", "(()", "(()).", "!", ",", "."],
+
+    "acceptList": ["Verb", "Noun", "Adjective", "Determiner", "Adverb"],
+
+    "random_seed": 10,
+
+    "epochs": 150,
+
+    "batch": 4,
+
+    "LR": 0.0001,
+
+    "max_len": 1598,
+
+    "mlp_parameter":{
+        "max_features": 1598,
+        "max_ngram": 2,
+        "n_units": [100]
+
+
+    },
+
+    "BiLSTM_parameter":{
+        "hidden_units": 128,
+        "embedding_dim": 512,
+        "token_th": 2,
+        "vocab_size": "None",
+        "max_len": 1598
+
+
+    },
+
+    "BERT_parameter":{
+        "hidden_units": 128,
+        "embedding_dim": 512,
+        "token_th": 3,
+        "vocab_size": "None",
+        "max_len": 1536
+
+
+    }
+}
